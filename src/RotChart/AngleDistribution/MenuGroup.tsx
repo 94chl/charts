@@ -1,5 +1,4 @@
 import React, { useEffect, useImperativeHandle, useRef, useState } from "react";
-import _ from "underscore";
 import { makeStyles, TextField, Menu, Divider } from "@material-ui/core";
 import type { StyleRules } from "@material-ui/core";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
@@ -86,7 +85,7 @@ const MenuGroup = React.forwardRef(
     }: MenuGroupProps,
     ref: React.ForwardedRef<{ toggleMenu: () => void }>
   ) => {
-    const error = !_.isEmpty(errorMessage);
+    const error = !!errorMessage;
     const classes = useStyles({
       size,
       disabled,
@@ -185,7 +184,7 @@ const MenuGroup = React.forwardRef(
           </div>
         </div>
 
-        {!_.isEmpty(menuGroup) && (
+        {menuGroup.length > 0 && (
           <Menu
             id="MenuGroup-listbox"
             open={Boolean(anchorEl)}
