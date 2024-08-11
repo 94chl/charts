@@ -1609,7 +1609,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/builder-vite@8.2.8":
+"@storybook/builder-vite@8.2.8", "@storybook/builder-vite@^8.2.8":
   version "8.2.8"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-8.2.8.tgz#89f276a3aae75cd54831233c8762fbe8d1dbbf4e"
   integrity sha512-p9EJfZkX9ZsVi1Qr3jYyCJaZZ/2pt0KVTOYnDzNnhi3P/suU6O3Lp/YCV5+KOfAmlg2IgTND0EidqZinqPIBSg==

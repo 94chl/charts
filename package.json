@@ -14,6 +14,7 @@
   "dependencies": {
     "@material-ui/core": "4",
     "@material-ui/icons": "^4.11.3",
+    "@storybook/builder-vite": "^8.2.8",
     "@storybook/react-vite": "^8.2.8",
     "@types/underscore": "^1.11.15",
     "react": "^18.3.1",
